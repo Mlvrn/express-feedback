@@ -100,8 +100,9 @@ exports.getUserById = async (req, res) => {
         error: 'User not found.',
       });
     }
+    const { email, username } = user;
 
-    return handleResponse(res, 200, user);
+    return handleResponse(res, 200, { email, username });
   } catch (error) {
     return handleServerError(res);
   }

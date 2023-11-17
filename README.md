@@ -120,7 +120,7 @@ _Response (200)_
 
 ### GET /api/user
 
-> Get user by id
+> Get user profile
 
 _Request Header_
 
@@ -138,7 +138,8 @@ _Response (200)_
 
 ```
 {
-    <user_data>
+    "email": <email>,
+    "username": <username>
 }
 ```
 
